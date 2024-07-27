@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Left-aligned Buttons</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        min-height: 100vh;
+        
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content-container {
+            display: flex;
+            flex:1 ;
+            padding:40px;
+            justify-content: first baseline; 
+            
+        }
+
+        .button-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+             /* Adjusted margin-top */
+        }
+        .colorful-button {
+            width: 200px;
+            padding: 15px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-style: initial;
+        font-size: larger;
+    }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+        font-style: italic;
+    }
+        /* Optional: You can add CSS styles to customize the search bar appearance */
+        #searchForm {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #searchInput {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #searchButton {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .colorful-button:hover {
+            filter: brightness(110%);
+        }
+        /* Different button styles */
+        .colorful-button:nth-child(1) {
+         background-color: #004a0a;
+        }
+        .colorful-button:nth-child(2) {
+             background-color: #004a0a;
+        }
+        .colorful-button:nth-child(3) {
+             background-color: #004a0a;
+        }
+        .colorful-button:nth-child(4) {
+             background-color: #004a0a;
+                }
+        .colorful-button:nth-child(5) {
+            background-color: #004a0a;
+        }
+        .colorful-button:nth-child(6) {
+             background-color: #004a0a;
+        }
+        .colorful-button:nth-child(7) {
+            background-color: #004a0a;
+        }
+        .colorful-button:nth-child(8) {
+            background-color: #004a0a;
+        }
+        /* Add styles for other buttons as needed */
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .logo img {
+            max-height: 100px; 
+
+       /* .colorful-button:hover {
+            filter: brightness(110%);
+        }*/
+    }
+    .additional-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-left: 50px;
+        }
+
+        .additional-info h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .additional-info p {
+            color: #555;
+            line-height: 1.6;
+            font-size: large;
+        }
+       
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <div class="logo">
+        <img src="ect.jpg" alt="Logo">
+    </div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    
+
+    <form id="searchForm" action="/search" method="GET">
+        <input type="text" id="searchInput" name="q" placeholder="Search...">
+        <button type="submit" id="searchButton">Search</button>
+    </form>
+
+    <!-- Your webpage content goes -->
+</div>
+
+<div class="content-container">
+
+<!-- Buttons on the left -->
+   <div class="button-container">
+    <button class="colorful-button" onclick="window.location.href='destination.html'">Destination Guides</button>
+    <button class="colorful-button" onclick="window.location.href='carbon-footprint-calculator.html'">Carbon Footprint Calculator</button>
+    <button class="colorful-button" onclick="window.location.href='accommodation.html'">Eco-friendly Accommodation</button>
+    <button class="colorful-button" onclick="window.location.href='transportation-options.html'">Transportation Options</button>
+    <button class="colorful-button" onclick="window.location.href='activities.html'">Sustainable Activities and Tours</button>
+    <button class="colorful-button" onclick="window.location.href='tips.html'">Green Travel Tips and Guides</button>
+    <button class="colorful-button" onclick="window.location.href='community.html'">Community and Reviews</button>
+    <button class="colorful-button" onclick="window.location.href='initiatives.html'">Environmental Initiatives and Partnerships</button>
+</div>
+
+
+<!--additional information section-->
+<div class="additional-info">
+    <h2>ECO TRAVELERS</h2>
+    <h4>Leave a Footprint,Take a Memory</h4>
+    <p>Eco-travelers prioritize sustainable practices, minimizing their ecological footprint by reducing emissions, supporting local communities, and preserving natural habitats. They follow "leave no trace" principles, opt for low-impact transportation, engage in nature activities, minimize single-use plastics, and advocate for sustainable tourism policies, fostering community through sharing experiences and tips.
+    <!-- Your webpage content goes here -->
+
+<!-- Button at the bottom -->
+<div style="text-align: center; margin-top: 20px;">
+    <button onclick="window.location.href='page1.html'" style="padding: 15px 30px; font-size: 18px; background-color: #004a0a; color: white; border: none; border-radius: 10px; cursor: pointer;">Continue your Journey with us! </button>
+</div>
+    
+        
+      
+
+
+
+    </p>
+</div>
+<img src="travel.jpg" alt="Example Image 1">
+
+</div>
+
+
+</body>
+</html>
